@@ -1,18 +1,58 @@
-# Lost Wilderness – Player documentation
+# Lost Wilderness — Centralised Documentation
 
-**Start here:** [PLAYER-HANDBOOK.md](PLAYER-HANDBOOK.md) – overview of the server and links to all guides.
+All project documentation lives in **`Docs/`**: design, player guides, development, and implementation status.
 
-## Guides
+---
 
-| Guide | Description |
-|-------|-------------|
-| [PLAYER-HANDBOOK.md](PLAYER-HANDBOOK.md) | Main handbook – calendar, events, clans, portals, commands |
-| [player-guide-calendar.md](player-guide-calendar.md) | Date, time, season, equator |
-| [player-guide-events.md](player-guide-events.md) | World events (eclipse, storms, fog, blizzard, etc.) |
-| [player-guide-survival.md](player-guide-survival.md) | Survival server commands and features |
-| [player-guide-amplified.md](player-guide-amplified.md) | Amplified server commands and features |
-| [player-guide-clans.md](player-guide-clans.md) | Clans and alliances |
-| [player-guide-portals.md](player-guide-portals.md) | Building and using portals |
-| [player-guide-link-approval.md](player-guide-link-approval.md) | Discord account linking |
-| [player-guide-common.md](player-guide-common.md) | Admin /lwconfig |
-| [player-guide-calendar-plugin.md](player-guide-calendar-plugin.md) | What the Calendar plugin does for players |
+## Quick Links
+
+| Section | Description |
+| --- | --- |
+| **[Implementation status](implementation-status.md)** | What is implemented in code vs not (Bible vs Plugin codebase). |
+| **[Design (Bible)](design/README.md)** | Server & plugin architecture from Discord: overview, infrastructure, plugins, resource packs, worlds, technical decisions, audio/visual, open questions. |
+| **[Player guide](player/README.md)** | In-game handbook: Home, Calendar & Time, Events, Survival, Amplified, Clans, Portals, Link Approval, Common. |
+| **[Development](development/dev-guide.md)** | Plugin development: command framework, services, world/arena utilities, best practices. |
+| **[Style guide](style-guide.md)** | How all docs are formatted (headings, tables, links, sections). |
+
+---
+
+## Structure
+
+```
+Docs/
+├── README.md                 ← You are here
+├── implementation-status.md  ← Code vs design (what’s built, what’s not)
+├── design/                  ← Bible: architecture & design (from Discord)
+│   ├── 01-overview/
+│   ├── 02-infrastructure/
+│   ├── 03-plugins/
+│   ├── 04-resource-packs/
+│   ├── 05-worlds-gameplay/
+│   ├── 06-technical-decisions/
+│   ├── 07-audio-visual/
+│   └── 08-open-questions/
+├── player/                  ← Player-facing wiki (Plugin/docs)
+│   ├── home.md
+│   ├── calendar-and-time.md
+│   ├── events.md
+│   ├── survival.md
+│   ├── amplified.md
+│   ├── clans.md
+│   ├── portals.md
+│   └── ...
+└── development/             ← Developer guide (Plugin/dev_guide)
+    ├── dev-guide.md
+    └── ...
+```
+
+---
+
+## Source
+
+- **Design:** Discord exports (channels + DMs), expanded into the Bible in `design/`.
+- **Player:** Plugin wiki (how to play, commands, features).
+- **Development:** Plugin dev guide (how to extend and maintain the codebase).
+
+All docs in `Docs/` follow a single style. See [style-guide.md](style-guide.md) for formatting rules. When adding or editing pages, apply that guide so the docs stay consistent.
+
+*Last consolidated: March 2026*
